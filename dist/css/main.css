@@ -1,0 +1,186 @@
+html, body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color:#000;
+  margin: 0;
+  padding: 0;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background-color: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/*前进后退按钮*/
+.swiper-button-next{
+    position: absolute;
+    left: 48%;
+    top: auto;
+    bottom: 5%;
+    transform:rotateZ(-90deg);
+    animation:beng 1s linear infinite;
+}
+@keyframes beng {
+     from{
+         bottom:0;
+         opacity: 1;
+     }
+     to{
+         bottom:3%;
+         opacity: 0;
+     }
+}
+/*音乐按钮*/
+#maic{
+    z-index: 9;
+    position: fixed;
+    right: 6%;
+    top: 6%;
+    width: 60px;
+    height: 60px;
+}
+#maic #imgdh{
+    z-index: 9;
+    width: 60px;
+    height: 60px;
+}
+#maic #img{
+    width: 30px;
+    height: 30px;
+    animation: zhuan 1s linear infinite;
+    position: absolute;
+    right: 15px;
+    top:15px;
+    z-index: 9;
+}
+/*旋转*/
+ @keyframes zhuan {
+     from{
+         transform:rotate(0deg);
+     }
+     to{
+         transform: rotate(360deg);
+     }
+}
+/*第一屏*/
+.swiper-slide .one{
+    width: 100%;
+    height: 100%;
+    background-image: url(../../img/onebg.jpg);
+    background-size: 100% 100%;
+    position: absolute;
+}
+.swiper-slide .one .one-top{
+    width: 70%;
+    height: 50%;
+    border: 10px solid #fff;
+    top:10%;
+    left: 13%;
+    position: relative;
+    overflow:hidden;
+}
+.swiper-slide .one .one-top img{
+    width: 100%;
+}
+.swiper-slide .one .one-main{
+    width: 70%;
+    height: 25%;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 15%;
+    top: 63%
+}
+.swiper-slide .one .one-main .img1{
+    width: 30%;
+    position: relative;
+    right: 28%;
+}
+.swiper-slide .one .one-main .img2{
+    width: 100%;
+    position: relative;
+    bottom: 45%
+}
+.swiper-slide .one .one-foot{
+    position: absolute;
+    bottom: 6%;
+    left: 28%;
+    color:rgba(255,255,255,0.6);
+    font-size: 10vw;
+}
+.swiper-slide .one .one-foot div{
+    float: left
+}
+/*第二屏*/
+.swiper-slide .two{
+    width: 100%;
+    height: 100%;
+    background-image: url(../../img/twobg.jpg);
+    background-size: 100% 100%;
+    position: relative;
+}
+.swiper-slide .two .two-top{
+    width: 40%;
+    height: 25%;
+    border: 5px solid #fff;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    overflow:hidden;
+    z-index: 1;
+}
+.swiper-slide .two .two-main{
+    width: 40%;
+    height: 25%;
+    border: 5px solid #fff;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    overflow:hidden;
+     z-index: 1;
+}
+.swiper-slide .two .two-foot{
+    width:  65%;
+    height: 30%;
+    border: 5px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow:hidden;
+     z-index: 2;
+}
+.swiper-slide .two img{
+    width: 100%;
+}
+/* 第三屏*/
+.swiper-slide .thress{
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+.swiper-slide .thress img{
+    width: 100%;
+    height: 100%;
+}

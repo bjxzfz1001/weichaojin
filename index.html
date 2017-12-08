@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="dist/css/swiper.min.css">
+  <link rel="stylesheet" href="dist/css/main.css">
+  <link rel="stylesheet" href="dist/css/animate.min.css">
+</head>
+<body>
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+<!--  第一屏   -->
+      <div class="swiper-slide">
+          <div class="one">
+              <div class="one-top ani" swiper-animate-effect="fadeInUp">
+                  <img src="img/one.jpg">
+              </div>
+              <div class="one-main" >
+                  <img class="img1 ani" swiper-animate-effect="bounceInLeft" swiper-animate-delay="1.5s" src="img/jiezhi.png">
+                  <img class="img2 ani" swiper-animate-effect="rotateInDownLeft"  swiper-animate-delay="1s" src="img/womenjiehunla.png">
+              </div>
+              <div class="one-foot ani" swiper-animate-effect="fadeInUp"  swiper-animate-delay="2s" >
+                  <div>2017</div>
+                  <div>.</div>
+                  <div>12</div>
+                  <div>.</div>
+                  <div>5</div>
+              </div>
+          </div>
+      </div>
+      <!--  第二屏   -->
+      <div class="swiper-slide">
+          <div class="two">
+              <div class="two-top ani"  swiper-animate-effect="zoomIn" swiper-animate-delay="0.5s"  >
+                  <img src="img/two_top.jpg">
+              </div>
+              <div class="two-main ani" swiper-animate-effect="rotateInUpRight"  swiper-animate-delay="1.5s">
+                  <img src="img/two_bottom.jpg">
+              </div>
+              <div class="two-foot ani"swiper-animate-effect="zoomIn"  swiper-animate-delay="2.5s">
+                  <img src="img/two_center.jpg">
+              </div>
+          </div>
+      </div>
+      <!--  第三屏   -->
+      <div class="swiper-slide">
+          <div class="thress" >
+          <img class="thress-img ani" swiper-animate-effect="zoomIn" swiper-animate-delay="0.5s" src="img/three.jpg">
+          </div>
+      </div>
+      <!--  第四屏   -->
+      <div class="swiper-slide">Slide 4</div>
+    </div>
+    <!--后退按钮-->
+    <div class="swiper-button-next"></div>
+    <!--音乐开始-->
+    <div id="maic">
+        <img id="imgdh" src="img/music.gif">
+        <img id="img" src="img/music_off.png">
+        <audio src="img/bgmusic.mp3" autoplay loop></audio>
+    </div>
+    <!--分页器-->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="dist/js/swiper.min.js"></script>
+  <script src="dist/js/swiper.animate1.0.2.min.js"></script>
+  <script src="dist/js/min.js"></script>
+</body>
+</html>
